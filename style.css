@@ -388,6 +388,7 @@ main {
   }
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
   header {
     max-height: 852px;
@@ -422,6 +423,38 @@ main {
     background-size: cover;
     & h2 {
       font-size: 20px;
+    }
+  }
+}
+
+/* Mobile L */
+@media screen and (max-width: 425px) {
+  header {
+    padding: var(--space-xl) var(--space-md);
+  }
+  .title-image {
+    width: 340px;
+  }
+  .title-content {
+    align-items: center;
+    & h1:nth-child(1), & h1:nth-child(2) {
+      font-size: 22px;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .after-h-image {
+    width: 340px;
+  }
+  .after-h-title {
+    align-items: center;
+    text-align: center;
+  }
+  .join-battle {
+    & h2 {
+      font-size: 16px;
     }
   }
 }
