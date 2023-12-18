@@ -382,6 +382,7 @@ main {
 /* END JOIN BATTLE */
 /* END MAIN */
 
+/* header image height fix */
 @media screen and (max-width: 1440px) {
   header {
     max-height: 700px;
@@ -389,10 +390,13 @@ main {
 }
 
 /* Tablet */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 980px) {
   header {
     max-height: 852px;
     background-position: bottom;
+  }
+  .header-content {
+    gap: var(--space-10xl);
   }
   .nav {
     display: none;
@@ -427,10 +431,13 @@ main {
   }
 }
 
-/* Mobile L */
+/* Mobile */
 @media screen and (max-width: 425px) {
   header {
     padding: var(--space-xl) var(--space-md);
+  }
+  .header-content {
+    gap: var(--space-7xl);
   }
   .title-image {
     width: 340px;
